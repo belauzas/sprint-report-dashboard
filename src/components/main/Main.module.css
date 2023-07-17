@@ -3,7 +3,7 @@
     display: grid;
     gap: 2rem;
     align-content: start;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 5fr 4fr;
     grid-template-areas:
         'sprint sprint'
         'burndown stories'

@@ -7,6 +7,11 @@
     gap: 4rem;
     background-color: #fff;
     padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0.1rem 0 0.5rem #0002;
 }
 
 .logo {
