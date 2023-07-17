@@ -1,0 +1,22 @@
+.statsList {
+    display: grid;
+    gap: 1rem;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.3rem;
+}
+
+.chart {
+    width: 3.6rem;
+}
+
+.end {
+}

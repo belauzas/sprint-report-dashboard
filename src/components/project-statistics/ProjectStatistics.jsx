@@ -3,8 +3,7 @@ import { StatisticsItem } from './StatisticsItem';
 
 export function ProjectStatistics() {
     return (
-        <div>
-            <StatisticsItem />
+        <div className={style.statsList}>
             <StatisticsItem />
             <StatisticsItem />
             <StatisticsItem />
