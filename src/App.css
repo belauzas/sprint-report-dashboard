@@ -14,6 +14,16 @@ body {
 .App {
     display: grid;
     grid-template-columns: 6rem 1fr 22rem;
+    grid-template-areas: 'menu main stats';
     min-height: 100vh;
     background-color: #f5f7fa;
+}
+
+@media (max-width: 900px) {
+    .App {
+        grid-template-columns: 6rem 1fr;
+        grid-template-areas:
+            'menu main'
+            'menu stats';
+    }
 }

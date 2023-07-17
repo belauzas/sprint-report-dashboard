@@ -1,3 +1,8 @@
 .aside {
+    grid-area: stats;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
     background-color: #fff;
 }

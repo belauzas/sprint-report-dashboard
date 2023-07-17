@@ -1,11 +1,12 @@
 .aside {
+    grid-area: menu;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 4rem;
     background-color: #fff;
-    padding: 3rem;
+    padding: 2rem 1rem;
 }
 
 .logo {
@@ -15,7 +16,7 @@
 .nav {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .link {

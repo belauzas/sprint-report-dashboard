@@ -1,0 +1,21 @@
+.block {
+    display: grid;
+    gap: 1rem;
+}
+
+.blockTitle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.blockTitle > a {
+    padding: 0.5rem 1.5rem;
+    margin-left: auto;
+    line-height: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ababab;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem #0003;
+}

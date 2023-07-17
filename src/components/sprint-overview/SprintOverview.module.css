@@ -1,0 +1,67 @@
+.overview {
+    --cols: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 1rem;
+}
+
+.overviewCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 13rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.top {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: auto;
+}
+.service {
+    color: #36f;
+}
+.location {
+    color: #aaa;
+}
+
+.img {
+    height: 5rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.value {
+    font-size: 1.7rem;
+}
+
+@media (min-width: 700px) {
+    .overview {
+        --cols: 2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .overview {
+        --cols: 3;
+    }
+}
+
+@media (min-width: 1400px) {
+    .overview {
+        --cols: 4;
+    }
+}
+
+@media (min-width: 1500px) {
+    .overview {
+        --cols: 5;
+    }
+}

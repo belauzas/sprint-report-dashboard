@@ -1,3 +1,24 @@
 .main {
+    grid-area: main;
+    display: grid;
+    gap: 2rem;
+    align-content: start;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+        'sprint sprint'
+        'burndown stories'
+        'team team';
+    padding: 2rem;
     background-color: #f5f7fa;
+}
+
+@media (max-width: 1300px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'sprint'
+            'burndown'
+            'stories'
+            'team';
+    }
 }
