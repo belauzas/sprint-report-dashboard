@@ -1,16 +1,18 @@
 import style from './SprintOverview.module.css';
 
-export function OverviewCard({top, children}) {
+export function OverviewCard({data: {title, value, details, childrenContent}}) {
+    const {heading, subHeading} = details || {};
+    
     return (
         <div className={style.overviewCard}>
-            {top === true && <div className={style.top}>
-                <div className={style.service}>Scrum training</div>
-                <div className={style.location}>Poland</div>
+            {details && <div className={style.top}>
+                {heading && <div className={style.service}>{heading}</div>}
+                {subHeading && <div className={style.location}>{subHeading}</div>}
             </div>}
             <div className={style.bottom}>
-                {children}
-                <div className={style.title}>Team velocity</div>
-                <div className={style.value}>52</div>
+                {childrenContent}
+                <div className={style.title}>{title}</div>
+                <div className={style.value}>{value}</div>
             </div>
         </div>
     );
